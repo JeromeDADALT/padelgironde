@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+}
+
+.blanc {
+    color: white;
+}
+
+.vert {
+    color: cadetblue;
+}
+
+
+/* header*/
+
+header {
+    background-image: url(../img/fond4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.titrelogo {
+    font-size: 24px;
+    text-align: center;
+}
+
+.vertical {
+    transform: rotate(-90deg);
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+.bouton1 {
+    height: 6vh;
+    line-height: 6vh;
+    border-radius: 3vh;
+    background-color: cadetblue;
+    border: solid 2px white;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav {
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+
+/* main */
+
+
+/* jouer */
+
+
+/* tournois */
+
+.fondbouton {
+    background-color: cadetblue;
+}
+
+.tournoi {
+    transition: all 1s ease;
+}
+
+.tournoi:hover {
+    transform: scale(2);
+}
+
+
+/* terrains */
+
+.terrain {
+    border: solid 4px cadetblue;
+    border-radius: 8%;
+    text-align: center;
+}
+
+.liste {
+    list-style-type: none;
+}
+
+a.terrain {
+    transition: all 1s ease;
+}
+
+a.terrain:hover {
+    transform: scale(1.3);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    background-image: url("../img/chevrondroite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: center;
+}
+
+.carousel-control-prev-icon {
+    right: unset;
+    left: 0;
+    background-image: url("../img/chevrongauche.png");
+}
+
+
+/* footer */

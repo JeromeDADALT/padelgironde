@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Padel33</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="hautdepage" class="container-fluid d-flex flex-column justify-content-between p-4">
+        <!-- logo et connexion inscription-->
+        <div class="row justify-content-between">
+            <div class="col-1">
+                <img src="img/logoarrondi.png" alt="" class="img-fluid relative">
+                <div class="blanc titrelogo">PADEL</div>
+                <div class="blanc titrelogo vertical absolute">GIRONDE</div>
+            </div>
+            <div class="col-5 row justify-content-end align-items-center">
+                <h2 class="col-3 m-4 bouton1">
+                    <a href="" class="blanc">Connexion</a>
+                </h2>
+                <h2 class="col-3 m-4 bouton1">
+                    <a href="" class="blanc">Inscription</a>
+                </h2>
+                <h2 class="d-none col-3 bouton1">
+                    <a href="" class="blanc">Déconnexion</a>
+                </h2>
+            </div>
+        </div>
+        <!-- menu principal-->
+        <nav class="row justify-content-around p-3 bg-dark">
+            <h1 class="col-2 font-weight-bold">
+                <a href="#paragraphejoueur" class="vert">Jouer</a>
+            </h1>
+            <h1 class="col-2 font-weight-bold">
+                <a href="#paragraphetournoi" class="vert">Tournois</a>
+            </h1>
+            <h1 class="col-2 font-weight-bold">
+                <a href="#paragrapheterrain" class="vert">Terrains</a>
+            </h1>
+            <h1 class="col-2 font-weight-bold">
+                <a href="" data-toggle="modal" data-target="#boutoncontact" class="vert">Contact</a>
+                <!-- bouton contact-->
+
+            </h1>
+        </nav>
+    </header>
+
+    <!-- main-->
+    <main class="container-fluid p-0">
+        <!-- jouer-->
+        <div class="container">
+            <h2 id="paragraphejoueur" class="font-weight-bold pt-5">Contacter un joueur</h2>
+
+            <div class="row justify-content-between align-items-center py-5">
+                <!-- zone de recherche-->
+                <div class="col-4">
+                    <h4>Disponibilités</h4>
+                    <div class="row justify-content-between">
+                        <div class="col-6 form-group p-0">
+                            <label for="jours" class="m-0">Jour</label>
+                            <select class="form-control" id="jours">
+                          <option>Tous les jours</option>
+                          <option>Lundi</option>
+                          <option>Mardi</option>
+                          <option>Mercredi</option>
+                          <option>Jeudi</option>
+                          <option>Vendredi</option>
+                          <option>Samedi</option>
+                          <option>Dimanche</option>
+                        </select>
+                        </div>
+                        <div class="col-6 form-group p-0">
+                            <label for="heures" class="m-0">Heure</label>
+                            <select class="form-control" id="heures">
+                            <option>Toute la journée</option>
+                          <option>8h-9h</option>
+                          <option>9h-10h</option>
+                          <option>10h-11h</option>
+                          <option>11h-12h</option>
+                          <option>12h-13h</option>
+                          <option>13h-14h</option>
+                          <option>14h-15h</option>
+                          <option>15h-16h</option>
+                          <option>16h-17h</option>
+                          <option>17h-18h</option>
+                          <option>18h-19h</option>
+                          <option>19h-20h</option>
+                          <option>20h-21h</option>
+                          <option>21h-22h</option>
+                        </select>
+                        </div>
+                    </div>
+                    <h4>Préférences</h4>
+                    <div class="row justify-content-betwen">
+                        <div class="col-6 form-group p-0">
+                            <label for="structure" class="m-0">Structure</label>
+                            <select class="form-control" id="structure">
+                          <option>Pas de préférence</option>
+                          <option>Salle privée</option>
+                          <option>Club</option>
+                        </select>
+                        </div>
+                        <div class="col-6 form-group p-0">
+                            <label for="ville" class="m-0">Ville</label>
+                            <select class="form-control" id="ville">
+                          <option>Pas de préférence</option>
+                          <option>Bordeaux</option>
+                          <option>Mérignac</option>
+                          <option>Talence</option>
+                        </select>
+                        </div>
+                    </div>
+                    <h4>Joueur</h4>
+                    <div class="row justify-content-between">
+                        <div class="col-6 form-group p-0">
+                            <label for="niveau" class="m-0">Niveau</label>
+                            <select class="form-control" id="niveau">
+                          <option>Peu importe</option>
+                          <option>Débutant</option>
+                          <option>Intermédiaire</option>
+                          <option>Confirmé</option>
+                        </select>
+                        </div>
+                        <div class="col-6 form-group p-0">
+                            <label for="sexe" class="m-0">Sexe</label>
+                            <select class="form-control" id="sexe">
+                          <option>Peu importe</option>
+                          <option>Homme</option>
+                          <option>Femme</option>
+                        </select>
+                        </div>
+                    </div>
+                    <input class="btn btn-primary btn-block mt-2" type="submit" value="Chercher">
+                </div>
+                <!-- début carousel-->
+                <div id="carouseljoueur" class="col-7 offset-1 carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-5">
+                                    <div>
+                                        <img src=" img/photojoueur.png " alt="photo de joueur " class="img-fluid ">
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="font-weight-bold">Jean</div>
+                                        <div>43 ans, Pessac</div>
+                                        <div>Confirmé</div>
+                                    </div>
+                                </div>
+                                <div class="col-5 ">
+                                    <h3 class="pt-2">Lieu favori</h3>
+                                    <div>
+                                        <div class="pl-3">BigPadel</div>
+                                        <div class="pl-3">Mérignac</div>
+                                    </div>
+                                    <h3 class="pt-2">Disponibilités</h3>
+                                    <div>
+                                        <div class="pl-3">Lundi, Jeudi</div>
+                                        <div class="pl-3">19h-21h</div>
+                                    </div>
+                                    <h3 class="pt-2">Commentaire</h3>
+                                    <p class="pl-3">Aucun</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            toto
+                        </div>
+                        <div class="carousel-item">
+                            toto </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouseljoueur" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouseljoueur" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- fin carousel-->
+
+        <!-- tournois-->
+        <div class="fondbouton">
+            <div class="container py-3 ">
+                <h2 id="paragraphetournoi" class="text-center font-weight-bold py-3 ">Tournois & évènements</h2>
+                <form action="" class="row justify-content-center align-items-end">
+                    <div class="col-3">
+                        <label for="dateDebut" class="">Entrer une date de début</label> <br>
+                        <input type="date" name="" id="dateDebut" class="form-control ">
+                    </div>
+                    <div class="col-3">
+                        <label for="dateFin" class="">Entrer une date de fin</label> <br>
+                        <input type="date" name="" id="dateFin" class="form-control ">
+                    </div>
+                    <input type="submit" value="Chercher" class="col-2 fondbouton text-light border border-light form-control">
+                </form>
+                <div class="row justify-content-between mt-5">
+                    <div class="col-3 text-center tournoi">
+                        <img src="img/tournoi1.jpeg " alt=" " class="img-fluid ">
+                    </div>
+                    <div class="col-3 text-center tournoi">
+                        <img src="img/tournoi2.jpeg " alt=" " class="img-fluid ">
+                    </div>
+                    <div class="col-3 text-center tournoi">
+                        <img src="img/tournoi3.jpeg " alt=" " class="img-fluid ">
+                    </div>
+                    <div class="col-3 text-center tournoi">
+                        <img src="img/tournoi4.jpeg " alt=" " class="img-fluid ">
+                    </div>
+                </div>
+                <div class="text-center p-3 ">
+                    <!-- bouton contact-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boutoncontact" data-whatever="@mdo">Rajouter un tournoi ou un évènement</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- terrains-->
+        <div class="container ">
+            <h2 id="paragrapheterrain" class="text-right font-weight-bold py-4">Trouver un terrain</h2>
+            <form class="row justify-content-end mb-4" action="">
+                <input class="col-3" type="text" class="form-control" placeholder="Chercher un terrain">
+                <input class="col-1 text-light form-control fondbouton" type="submit" value="Chercher">
+            </form>
+            <div class="row justify-content-between align-items-center p-2 ">
+                <a href="https://www.bigpadel.fr/" target="_blank" class="col-3 m-1 p-1 terrain">
+                    <h3 class="p-1 ">BigPadel</h3>
+                    <ul class="liste p-1 ">
+                        <li>Mérignac</li>
+                        <li>6 double (4 couverts)</li>
+                        <li>1 simple couvert</li>
+                        <li>Salle privée</li>
+                        <li>
+                            0556123456
+                        </li>
+                    </ul>
+                </a>
+                <div class="col-3 m-1 p-1 terrain ">
+                    <h3 class="p-1 ">TC Bordeaux</h3>
+                    <ul class="liste p-1 ">
+                        <li>Talence</li>
+                        <li>1 double (couvert)</li>
+                        <li>0 simple</li>
+                        <li>Club</li>
+                        <li>
+                            0556123456
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 m-1 p-1 terrain ">
+                    <h3 class="p-1 ">4Padel</h3>
+                    <ul class="liste p-1 ">
+                        <li>Bordeaux</li>
+                        <li>7 double (couverts)</li>
+                        <li>0 simple</li>
+                        <li>Salle privée</li>
+                        <li>
+                            0556123456
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center p-3 ">
+                    Il manque un terrain ?
+                    <!-- bouton contact-->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#boutoncontact" data-whatever="@mdo">Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid bg-dark p-4 ">
+        <div class="row justify-content-between align-items-center ">
+            <div class="col-3 "></div>
+            <div class="col-1 ">
+                <a href="#hautdepage">
+                    <img src="img/logoarrondi.png " alt=" " class="img-fluid relative "></a>
+            </div>
+            <div class="col-3 blanc ">
+                Mentions légales
+            </div>
+        </div>
+    </footer>
+
+    <!-- modals-->
+    <div class="modal fade" id="boutoncontact" tabindex="-1" role="dialog" aria-labelledby="boutoncontactLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="boutoncontactLabel">Nouveau message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea rows="10" class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Envoyer message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- boostrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        })
+    </script>
+</body>
+
+</html>
